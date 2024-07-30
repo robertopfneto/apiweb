@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Profissões</title>
+</head>
+<body>
+    <h2>Lista de Profissões</h2>
+    <ul>
+        {% for profession in professions %}
+        <li>{{ profession.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'api_home' %}"><button>Voltar</button></a>
+
+</body>
+</html>

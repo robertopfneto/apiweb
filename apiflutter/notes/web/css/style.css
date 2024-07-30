@@ -1,0 +1,11 @@
+body{
+    align-items: center;
+}
+
+.selecao{
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10000px;
+    border-style: none;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API Home</title>
+</head>
+<body>
+    <h1>Bem-vindo à API!</h1>
+    
+    <div class="seleção">
+
+        <a href="{% url 'person_list' %}"><button>Lista de Pessoas</button></a>
+        <a href="{% url 'person_form' %}"><button>Cadastro de Pessoas</button></a>
+
+        <a href="{% url 'profession_list' %}"><button>Lista de Profissões</button></a>
+        <a href="{% url 'profession_form' %}"><button>Cadastro de Profissões</button></a>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pessoas</title>
+</head>
+<body>
+    <h2>Lista de Pessoas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Profissão</th>
+                <th>Detalhes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for person in people %}
+            <tr>
+                <td>{{ person.name }}</td>
+                <td>{{ person.fk_profession.name }}</td>
+                <td><a href="{% url 'person_detail' pk=person.pk %}"><button>Detalhes</button></a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'api_home' %}">Voltar para a página inicial</a>
+
+</body>
+</html>
